@@ -31,6 +31,7 @@ If you have [anaconda](https://www.continuum.io/downloads), you can install `rtp
 
 I've had one report that installing from the conda-forge channel does not pick up some packages. If so, you may also try installing like this:
 
+    conda config --add channels conda-forge # required for proper dependency resolution with pkgw-forge
     conda install -c conda-forge numpy scipy jupyter bokeh cython matplotlib
     conda install -c pkgw-forge pwkit casa-tools casa-python casa-data
     pip install rtpipe
